@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUITAR</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".logo img").mouseover(function(){
+                $(this).attr("src","../img/logo.jpg")
+            })
+            $(".logo img").mouseout(function(){
+                $(this).attr("src","../img/Guitar.png")
+            })
+            $(".icon").mouseover(function(){
+                $(this).attr("name","copy-outline")
+            })
+            $(".icon").mouseout(function(){
+                $(this).attr("name","file-tray-full-outline")
+            })
+        })
+
+        function myFunction() {
+        var txt;
+         if (confirm("Press a button!")) {
+         txt = "You pressed OK!";
+         } else {
+          txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+
+
+}
+
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/Guitar.png" alt="Logo">
+        </div>
+        <h1>Categoria</h1>
+        <ion-icon class="icon" name="file-tray-full-outline"></ion-icon>
+        <nav>
+            <ul>
+                <li><a href="index.html"> <ion-icon name="home-outline"></ion-icon> Inicio</a></li>
+                <li><a href="Categoria.html"> <ion-icon name="layers-outline"></ion-icon> Categoría</a></li>
+                <li><a href="Contactanos.html"> <ion-icon name="call-outline"></ion-icon> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <main>
+        <div class="cartas">
+            <div class="carta" id="carta1">
+                <div class="cara frontal">
+                    <img class="img" src="../img/guitar-1.jfif" alt="">
+                    <h3>Gretsch</h3>
+                </div>
+                <div class="cara trasera">
+                    <h3>Guitar 1</h3>
+                    <p>Una de las características distintivas de las guitarras Gretsch es su estilo y diseño retro.</p>
+                    <div class="link">
+                    <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="carta" id="carta2">
+                <div class="cara frontal">
+                    <img class="img" src="../img/guitar-2.jfif" alt="">
+                    <h3>Epiphone</h3>
+                </div>
+                <div class="cara trasera">
+                    <h3>Guitar 2</h3>
+                    <p>Las guitarras Epiphone suelen estar bien construidas, con materiales duraderos que ofrecen un buen tono y una excelente jugabilidad.</p>
+                    <div class="link">
+                    <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="carta" id="carta3">
+                <div class="cara frontal">
+                    <img class="img" src="../img/guitar-3.jfif" alt="">
+                    <h3>Rickenbacker</h3>
+                </div>
+                <div class="cara trasera">
+                    <h3>Guitar 3</h3>
+                    <p>guitarras eléctricas macizas, aunque no eran guitarras estándar.</p>
+                    <div class="link">
+                    <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta" id="carta4">
+                <div class="cara frontal">
+                    <img class="img" src="../img/guitar-4.jfif" alt="">
+                    <h3>Clasica</h3>
+                </div>
+                <div class="cara trasera">
+                    <h3>Guitar 4</h3>
+                    <p>tiene seis cuerdas afinadas, yendo de lo grave a lo agudo.</p>
+                    <div class="link">
+                    <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta" id="carta5">
+                <div class="cara frontal">
+                    <img class="img" src="../img/guitar-5.jfif" alt="">
+                    <h3>Rusa</h3>
+                </div>
+                <div class="cara trasera">
+                    <h3>Guitar 5</h3>
+                    <p>La afinación de esta guitarra es completamente distinta a la española; tradicionalmente, se utiliza una afinación abierta en Sol mayor.</p>
+                    <div class="link">
+                    <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="copy_txt">
+                            <p>Copyright © 2024  Diseñado por <span>Leo</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+    <script nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+
+</body>
+</html>
