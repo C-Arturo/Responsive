@@ -15,14 +15,8 @@
             $(".logo img").mouseout(function(){
                 $(this).attr("src","../img/Guitar.png")
             })
-            $(".icon").mouseover(function(){
-                $(this).attr("name","copy-outline")
-            })
-            $(".icon").mouseout(function(){
-                $(this).attr("name","file-tray-full-outline")
-            })
+            
         })
-
         function myFunction() {
         var txt;
          if (confirm("Press a button!")) {
@@ -31,11 +25,7 @@
           txt = "You pressed Cancel!";
   }
   document.getElementById("demo").innerHTML = txt;
-
-
 }
-
-
     </script>
 </head>
 <body>
@@ -44,7 +34,6 @@
             <img src="../img/Guitar.png" alt="Logo">
         </div>
         <h1>Categoria</h1>
-        <ion-icon class="icon" name="file-tray-full-outline"></ion-icon>
         <nav>
             <ul>
                 <li><a href="index.html"> <ion-icon name="home-outline"></ion-icon> Inicio</a></li>
@@ -53,7 +42,6 @@
             </ul>
         </nav>
     </header>
-
  <main>
         <div class="cartas">
             <div class="carta" id="carta1">
@@ -141,7 +129,6 @@
             </div>
         </div>
     </footer>
-
     <script type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
     <script nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
 
